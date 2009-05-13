@@ -14,7 +14,12 @@ class names and table names do correspond.
 If you have any models which correspond to tables that do not follow the Rails conventions, this extension
 will not work for you.
 
-Set Radiant::Config['admin_data.show_tab?'] = 'true' if you would like to have a tab to click in the Radiant interface.
+Run the rake task:
+
+    radiant:extensions:admin_data:install
+
+Set Radiant::Config['admin_data.show_tab?'] = 'true' if you would like to have a tab to click in the Radiant 
+interface for admin users.
 
 Built by Saturn Flyer http://www.saturnflyer.com
 Thanks go to Neeraj Singh for his plugin! http://neeraj.name
