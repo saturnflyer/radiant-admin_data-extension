@@ -1,0 +1,20 @@
+= Admin Data
+
+This extension uses the admin_data plugin to provide a simple CRUD interface for your database tables.
+
+You *MUST* add the admin_data plugin to your project from the following repository:
+
+    git://github.com/saturnflyer/admin_data.git
+    
+This should be located in vendor/plugins/admin_data. The saturnflyer fork reads the table names 
+to discover the appropriate class names to load. The original plugin looks in app/models for the 
+necessary classes, but Radiant loads models from several locations, so the simpler path is to expect that
+class names and table names do correspond.
+
+If you have any models which correspond to tables that do not follow the Rails conventions, this extension
+will not work for you.
+
+Set Radiant::Config['admin_data.show_tab?'] = 'true' if you would like to have a tab to click in the Radiant interface.
+
+Built by Saturn Flyer http://www.saturnflyer.com
+Thanks go to Neeraj Singh for his plugin! http://neeraj.name
